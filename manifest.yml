@@ -1,7 +1,7 @@
 applications:
 - services:
- - speech-to-text-service-standard
+ - Text to Speech-lg
  name: KNFirstApp
  command: node app.js
  path: .
- memory: 512M
+ memory: 128M
