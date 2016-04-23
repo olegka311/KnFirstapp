@@ -1,15 +1,7 @@
----
-declared-services:
-  speech-to-text-service-standard:
-    label: speech_to_text
-    plan: standard
 applications:
-- name: KNFirstApp
-  path: .
-  command: npm start
-  memory: 512M
-  services:
-  - speech-to-text-service-standard
-  env:
-    NODE_ENV: production
-    SECURE_EXPRESS: 1
+- services:
+ - speech-to-text-service-standard
+ name: KNFirstApp
+ command: node app.js
+ path: .
+ memory: 512M
